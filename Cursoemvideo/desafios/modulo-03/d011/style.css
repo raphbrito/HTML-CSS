@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+ /* Regras de mídia para ajustar o tamanho do plano de fundo em dispositivos de tela pequena */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: auto; /* Altera o tamanho da imagem para auto para evitar corte em telas pequenas */
+        background-attachment: scroll; /* Permite que o plano de fundo role junto com o conteúdo */
+    }
+}
+
+body {
+    background-image: url('https://i.imgur.com/4EhEnEE.jpeg');
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover; /* Mantém a proporção da imagem e a exibe inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Fixa a imagem no lugar enquanto o conteúdo faz scroll */
+    /* Adicione outros estilos se desejar */
+    margin: auto;
+
+}

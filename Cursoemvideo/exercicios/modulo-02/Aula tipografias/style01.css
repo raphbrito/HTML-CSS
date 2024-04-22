@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    /*
+    Medidas Absolutas das fontes:
+    cm (centímetro)
+    mm (milímetro)
+    in (polegadas)
+    px (pixel)
+    pt (ponto -> medida padrão dos editores de texto, normalmente)
+    pc (pica)
+
+    Medidas Relativas das fontes:
+    em (medida relativa ao tamanho da letra M da fonte)
+    ex (medida relativa ao tamanho da letra X da fonte)
+    rem (medida relativa à fonte que está configurada no body)
+    vw (viewport width - medida relativa à porcentagem da largura da viewport)
+    vh (viewport height - medida relativa à porcentagem da largura da viewport)
+    */
+    font-size: 1em ;
+    /*
+    16px -> geralmente é o tamnho padrão dos navegadores
+    1em = 16px (geralmente)
+    */
+    font-weight: normal;
+    /*
+    Pesos das fontes: o quão forte a fonte vai aparecer na tela
+    Usamos: lighter, normal, bold e bolder, mas podermos usar a numeração:
+        100	Thin (Hairline)
+        200	Extra Light (Ultra Light)
+        300	Light
+        400	Normal (Regular)
+        500	Medium
+        600	Semi Bold (Demi Bold)
+        700	Bold
+        800	Extra Bold (Ultra Bold)
+        900	Black (Heavy)
+        950	Extra Black (Ultra Black)
+    */
+    font-style: italic;
+    text-decoration: underline;
+}
+h1, h2 {
+    /*
+    "Shorthand" => atalhos
+    shorthand font
+    - font-style -> font-weight -> font-size -> font-family
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: italic;
+    */
+    font: italic bolder 3em 'work Sans', sans-serif;
+}
+

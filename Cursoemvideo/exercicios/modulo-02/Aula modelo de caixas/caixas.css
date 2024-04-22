@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+h1{
+    background-color: lightgray;
+    height: 100px;
+    width: 390px;
+    border: 10px solid darkslategray;
+    padding: 10px;
+    align-content: center;
+    margin: 20px auto 40px auto;
+    outline: 5px dashed salmon;
+}
+a{
+    border: 1px solid red;
+    padding: 10px;
+}
