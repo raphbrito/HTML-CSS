@@ -1,10 +1,10 @@
-@charset  'UTF-8'
+@charset  'UTF-8';
 
-body {
+body{
     background-color: rgb(69, 69, 69);
     font: 13pt Arial;
 }
-main {
+main{
     background-color: white;
     width: 700px;
     padding: 20px;
@@ -12,23 +12,23 @@ main {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
 }
-h1 {
+h1{
     text-align: center;
     color: darkgoldenrod;
 }
-h2 {
+h2{
     color: rgb(125, 92, 8);
 }
 ul{
     columns: 2;
     list-style-position: inside;
 }
-a, a:visited {
+a, a:visited{
     color: rgb(34, 34, 34);
     font-weight: bolder;
     text-decoration: none;
 }
-a:hover {
+a:hover{
     color: darkgoldenrod;
     text-decoration: underline;
 }
