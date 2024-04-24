@@ -12,9 +12,6 @@ body{
     height: 100vh;
     margin: auto;
     /*
-    background: url('https://i.imgur.com/4EhEnEE.jpeg') center center no-repeat fixed;
-    background-size: cover;
-    
     Ordem dos valores do shorthand "background"
     
     background: color image position repeat size attachment;
