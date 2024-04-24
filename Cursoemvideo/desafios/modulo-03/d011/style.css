@@ -1,18 +1,20 @@
 @charset 'UTF-8';
- /* Regras de mídia para ajustar o tamanho do plano de fundo em dispositivos de tela pequena */
+ /* Regras de mídia para ajustar o tamanho do plano de fundo em dispositivos de tela pequena
+
 @media screen and (max-width: 768px) {
     body {
-        background-size: auto; /* Altera o tamanho da imagem para auto para evitar corte em telas pequenas */
-        background-attachment: scroll; /* Permite que o plano de fundo role junto com o conteúdo */
+        background-size: auto; - Altera o tamanho da imagem para auto para evitar corte em telas pequenas
+        background-attachment: scroll; - Permite que o plano de fundo role junto com o conteúdo
     }
 }
-
-body {
+*/
+body{
     height: 100vh;
     margin: auto;
+    /*
     background: url('https://i.imgur.com/4EhEnEE.jpeg') center center no-repeat fixed;
     background-size: cover;
-    /*
+    
     Ordem dos valores do shorthand "background"
     
     background: color image position repeat size attachment;
@@ -22,5 +24,23 @@ body {
     background-position: center center; - Centraliza a imagem
     background-attachment: fixed; - Fixa a imagem no lugar enquanto o conteúdo faz scroll
     */
-
+}
+#container{
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: transparent;
+    background-image: url('./imagens/espaco.jpg');
+    background-size: 100% 100%;
+}
+#conteudo{
+    height: 508px;
+    width: 500px;
+    background-color: transparent;
+    background-image: url('./imagens/astronauta.png');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
