@@ -4,6 +4,15 @@ body{
     background-color: rgb(69, 69, 69);
     font: 13pt Arial;
 }
+header{
+    background-color: white;
+    width: 700px;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+}
 main{
     background-color: white;
     width: 700px;
