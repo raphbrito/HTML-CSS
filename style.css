@@ -2,47 +2,33 @@ body {
     background-color: rgb(69, 69, 69);
     font: 13pt Arial;
 }
-
 main {
     background-color: white;
-    width: 500px;
+    width: 700px;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
 }
-
 h1 {
+    text-align: center;
     color: darkgoldenrod;
 }
-
 h2 {
     color: rgb(125, 92, 8);
 }
-
-aside {
-    display: block; 
-    font-size: 10pt;
-    text-align: justify;
-    background-color: rgb(222, 222, 222);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+ul{
+    list-style-type: '\2714\00A0\0020';
+    columns: 2;
+    list-style-position: inside;
 }
-
-aside img {
-    width: 60px; 
-    display: block; 
-    float: left;
-    margin-right: 10px;
-}
-
 a, a:visited {
     color: rgb(34, 34, 34);
     font-weight: bolder;
+    text-decoration: none;
 }
 
 a:hover {
     color: darkgoldenrod;
-    text-decoration: none;
+    text-decoration: underline;
 }
