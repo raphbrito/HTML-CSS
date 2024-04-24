@@ -5,9 +5,16 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --fonte01: Verdana, Genova, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
 html, body{
     max-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 body{
     border: 1px solid black;
@@ -29,10 +36,11 @@ header{
     color: white;
     text-align: center;
     margin: auto;
-    font-family: 'Passion One', sans-serif;
 }
 header>h1{
     padding-top: 50px;
+    font-family: var(--fonte02);
+    font-size: 10vw;
 }
 section{
     padding-top: 10vh;
@@ -40,7 +48,8 @@ section{
     padding-left: 30px;
     line-height: 2em;
     text-align: left;
-    font-family: 'Sriracha', cursive;
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
@@ -48,24 +57,13 @@ section.normal{
 }
 section.imagem{
     background-color: rgb(51, 51, 51);
-    height: 200px;
-    border: 1px solid black;
-    margin: auto;
+    color: white;
 }
 section.imagem>p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px;
 }
-section#joaninha{
-    background-image: url('../imagens/background001.jpg');
-    background-position: center right;
-}
-section#carta{
-    background-image: url('../imagens/background002.jpg');
-    background-position: center center;
-}
-
-
 footer{
     background-color: black;
     color: white;
