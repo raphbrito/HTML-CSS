@@ -9,12 +9,18 @@
 
 body {
     height: 100vh;
-    background-image: url('https://i.imgur.com/4EhEnEE.jpeg');
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-size: cover; /* Mantém a proporção da imagem e a exibe inteira */
-    background-position: center center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Fixa a imagem no lugar enquanto o conteúdo faz scroll */
-    /* Adicione outros estilos se desejar */
     margin: auto;
+    background: url('https://i.imgur.com/4EhEnEE.jpeg') center center no-repeat fixed;
+    background-size: cover;
+    /*
+    Ordem dos valores do shorthand "background"
+    
+    background: color image position repeat size attachment;
+
+    background-repeat: no-repeat; - Evita que a imagem se repita
+    background-size: cover; - Mantém a proporção da imagem e a exibe inteira
+    background-position: center center; - Centraliza a imagem
+    background-attachment: fixed; - Fixa a imagem no lugar enquanto o conteúdo faz scroll
+    */
 
 }
