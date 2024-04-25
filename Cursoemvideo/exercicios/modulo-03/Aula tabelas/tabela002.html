@@ -10,11 +10,25 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
             background-color: grey;
             color: white;
         }
@@ -22,6 +36,18 @@
             border: 1px solid black;
             padding: 6px;
             vertical-align: middle;
+        }
+        tbody>tr:nth-child(odd){
+            /*
+            tbody>tr:nth-child(2n-1)
+            */
+            background-color: white;
+        }
+        tbody>tr:nth-child(even){
+            /*
+            tbody>tr:nth-child(2n)
+            */
+            background-color: lightgray;
         }
         .num{
             text-align: right;
@@ -49,10 +75,11 @@
                     TABLE DATA = <td></td> = Dado da tabela
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -167,7 +194,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">203.078.389</td>
             </tr>
             
