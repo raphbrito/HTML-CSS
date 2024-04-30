@@ -50,3 +50,6 @@ section#sociais>a>img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
     transition: 0.25s, border 0.3s;
 }
+section#sociais>a>img:active{
+    transform: scale(95%);
+}
