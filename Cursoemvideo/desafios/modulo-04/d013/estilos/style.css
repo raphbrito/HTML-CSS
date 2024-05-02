@@ -15,7 +15,7 @@ body{
     background-attachment: fixed;
 }
 main{
-    height: 100vh;
+    height: 100vw;
     position: relative;
 }
 section#telefone{
