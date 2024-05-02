@@ -10,16 +10,15 @@
 }
 html,body{
     height: 100vw;
-    width: 100vw;
-    
+    width: 100vw;    
     position: fixed;
+    min-width: 450px;
+    min-height: 680px;
 }
 body{
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 450px;
-    min-height: 680px;
 }
 main{
     height: 100vh;
@@ -43,7 +42,6 @@ iframe#tela{
     height: 471px;
 }
 section#sociais{
-    margin-right: 2%;
     text-align: right;
 }
 section#sociais>a>img{
