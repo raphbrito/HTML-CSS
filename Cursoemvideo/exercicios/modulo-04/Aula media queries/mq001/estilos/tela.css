@@ -9,6 +9,7 @@ html{
 }
 header{
     background-color: rgb(158, 158, 158);
+    margin: auto;
 }
 header>h1{
     text-align: center;
