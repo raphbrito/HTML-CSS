@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -37,6 +37,13 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.styli.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
