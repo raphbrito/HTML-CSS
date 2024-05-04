@@ -7,6 +7,17 @@
     <title>Recuperar Senha</title>
 </head>
 <body>
-    
+    <h1>Refaça sua senha</h1>
+    <form action="isenha" method="post">Refaça a sua senha aqui:
+        <p>
+            <label for="isenha">Senha nova:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="Senha nova" minlength="8" maxlength="20">
+        </p>
+        <p>
+            <label for="isenha">Repita a senha:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="Repita a senha" minlength="8" maxlength="20">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
