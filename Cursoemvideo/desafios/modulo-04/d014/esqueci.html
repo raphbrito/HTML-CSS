@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Refaça sua senha</h1>
-    <form action="isenha" method="post">Refaça a sua senha aqui:
-        <p>
-            <label for="isenha">Senha nova:</label>
-            <input type="password" name="senha" id="isenha" required placeholder="Senha nova" minlength="8" maxlength="20">
-        </p>
-        <p>
-            <label for="isenha">Repita a senha:</label>
-            <input type="password" name="senha" id="isenha" required placeholder="Repita a senha" minlength="8" maxlength="20">
-        </p>
-        <input type="submit" value="Enviar">
+    <form action="isenha" method="post">
+        <div><label for="iusuario">Usuário:</label></div>
+        <input type="email" name="email" id="iusuario" required placeholder="Digite seu usuário" maxlength="20">
+        <div><label for="isnova">Senha nova:</label></div>
+        <input type="password" name="senha" id="isnova" required placeholder="Senha nova" minlength="8" maxlength="20">
+        <div><label for="isrpt">Repita a senha:</label></div>
+        <input type="password" name="senha" id="isrpt" required placeholder="Repita a senha" minlength="8" maxlength="20">
     </form>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
 </body>
 </html>
