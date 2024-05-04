@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Flexible Box</title>
     <style>
         div.conteiner {
             background-color: lightsalmon;
 
             display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 400px;
         }
 
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            padding: 40px;
         }
     </style>
 </head>
@@ -28,6 +32,11 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
     </div>
 </body>
 </html>
