@@ -6,14 +6,45 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Flexible Box</title>
     <style>
-        div.conteiner {
+        div.conteiner1{
             background-color: lightsalmon;
-
+            display: flex;
+            flex-direction: row;
+        }
+        div.item1{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        div.conteiner2{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        div.item2{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        div.conteiner3{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+        }
+        div.item3{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        div.conteiner4{
+            background-color: lightsalmon;
             display: flex;
             flex-direction: column-reverse;
         }
-
-        div.item {
+        div.item4{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
@@ -22,14 +53,44 @@
     </style>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+    <div class="conteiner1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+    <br>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <br>
+    <div class="conteiner3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>
+    </div>
+    <br>
+    <div class="conteiner4">
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
     </div>
 </body>
 </html>
