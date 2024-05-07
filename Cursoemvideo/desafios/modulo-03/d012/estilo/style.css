@@ -10,7 +10,6 @@
     --fonte02: 'Passion One', cursive;
     --fonte03: 'Sriracha', cursive;
 }
-
 html, body{
     max-height: 100vh;
     background-color: darkgray;
