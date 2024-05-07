@@ -25,11 +25,7 @@ h1{
     text-align: center;
     color: darkgoldenrod;
 }
-h1>a{
-    color: darkgoldenrod;
-    text-decoration: none;
-}
-h1>a:hover{
+h1>a,a:visited,a:hover{
     color: darkgoldenrod;
     text-decoration: none;
 }
