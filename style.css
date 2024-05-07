@@ -25,10 +25,6 @@ h1{
     text-align: center;
     color: darkgoldenrod;
 }
-h1>a,h1>a:visited,h1>a:hover{
-    color: darkgoldenrod;
-    text-decoration: none;
-}
 h2{
     color: rgb(125, 92, 8);
 }
