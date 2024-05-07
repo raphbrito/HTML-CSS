@@ -25,6 +25,9 @@ h1{
     text-align: center;
     color: darkgoldenrod;
 }
+h1>a{
+    text-decoration: none;
+}
 h2{
     color: rgb(125, 92, 8);
 }
