@@ -26,7 +26,10 @@ h1{
     color: darkgoldenrod;
 }
 h1>a{
-    text-align: center;
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+h1>a:hover{
     color: darkgoldenrod;
     text-decoration: none;
 }
