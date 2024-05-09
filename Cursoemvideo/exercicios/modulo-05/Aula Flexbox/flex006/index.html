@@ -6,16 +6,58 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Flexible Box</title>
     <style>
-        div.conteiner {
+        div.conteiner1{
             background-color: lightsalmon;
-
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch;
+            /* Alinha o conteúdo de acordo com o eixo transversal
+            - stretch: divide o container em linhas do mesmo tamanho e alonga ou diminui os conteúdos de acordo com o tamanho dessas linhas;
+            - flex-start: a primeira linha de conteúdo fica grudada no começo do eixo transversal e o espaço em branco será jogado pro final do eixo transversal;
+            - center: irá colocar todos os itens no centro do eixo transversal e os espaços em branco serão distribuídos igualmente pra cima e pra baixo;
+            - space-between: a primeira linha de conteúdo fica grudada no começo do eixo transversal, a última linha de conteúdo fica grudada no final do eixo transversal e todos os outros conteúdos serão distribuídos pelo eixo transversal com o espaçamento igual entre eles;
+            - space-evenly: todos os conteúdos serão distribuídos pelo eixo transversal com o espaçamento igual entre eles;
+            - space-around: o container principal será dividido em subcontainers iguais, e cada conteúdo será centralizado no seu respectivo subcontainer;
+            - flex-end: a última linha de conteúdo fica grudada no final do eixo transversal e o espaço em branco será jogado pro início do eixo transversal;
+            */
+        }
+        div.conteiner2{
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+        }
+        div.conteiner3{
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+        }
+        div.conteiner4{
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+        }
+        div.conteiner5{
+            background-color: lightsalmon;
+            height: 400px;
             display: flex;
             flex-flow: row wrap;
             align-content: space-around;
-            height: 400px;
         }
-
-        div.item {
+        div.conteiner6{
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+        }
+        div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
@@ -24,7 +66,82 @@
     </style>
 </head>
 <body>
-    <div class="conteiner">
+    <div class="conteiner1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner6">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
