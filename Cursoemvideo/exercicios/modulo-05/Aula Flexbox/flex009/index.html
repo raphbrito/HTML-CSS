@@ -6,18 +6,29 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Flexible Box</title>
     <style>
-        div.conteiner {
+        div.conteiner{
             background-color: lightsalmon;
-
             display: flex;
             flex-flow: row nowrap;
         }
-
-        div.item {
+        div.item{
             background-color: lightskyblue;
             border: 1px solid black;
+            align-content: center;
             text-align: center;
-            flex-basis: 150px;
+            flex-basis: 110px;
+        }
+        div.conteiner1{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item1{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            align-content: center;
+            text-align: center;
+            flex-basis: 235px;
         }
     </style>
 </head>
@@ -30,6 +41,18 @@
         <div class="item">E</div>
         <div class="item">Conteúdo maior ainda, que vai ocupar mais espaço.</div>
         <div class="item">G</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat est, enim soluta quasi ex ipsum in aut culpa vero aperiam molestiae quos unde provident at voluptas iure aliquam. Quaerat.</div>
+    </div>
+    <br><br><br>
+    <div class="conteiner1">
+        <div class="item1">A</div>
+        <div class="item1">Outro conteúdo</div>
+        <div class="item1">C</div>
+        <div class="item1">Conteúdo um pouco maior</div>
+        <div class="item1">E</div>
+        <div class="item1">Conteúdo maior ainda, que vai ocupar mais espaço.</div>
+        <div class="item1">G</div>
+        <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat est, enim soluta quasi ex ipsum in aut culpa vero aperiam molestiae quos unde provident at voluptas iure aliquam. Quaerat.</div>
     </div>
 </body>
 </html>
