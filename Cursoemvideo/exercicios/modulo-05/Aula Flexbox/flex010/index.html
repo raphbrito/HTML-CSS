@@ -10,13 +10,59 @@
             background-color: lightsalmon;
             display: flex;
             flex-flow: row nowrap;
+            width: 500px;
         }
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
+            flex-basis: 150px;
             flex-shrink: 1;
+            /* por padrão o flex-shrink é 1, que significa que o item pode encolher. para não encolher, o flex-shrink tem que ser 0 */
+            flex-grow: 0;
+            /* por padrão o flex-grow é 0, que significa que o item não pode crescer, para crescer, o flex-grow tem que 1 */
+        }
+        div.conteiner1{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 600px;
+        }
+        div.item1{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        div.conteiner2{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            min-width: none;
+            max-width: 1200px;
+        }
+        div.item2{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div.conteiner3{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            min-width: 500px;
+            max-width: 1000px;
+        }
+        div.item3{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-shrink: 0;
             flex-grow: 1;
         }
     </style>
@@ -26,7 +72,28 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        
     </div>
+    <p>Pode diminuir mas não pode aumentar</p>
+    <br><br><br>
+    <div class="conteiner1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+    <p>Não pode diminuir e não pode aumentar</p>
+    <br><br><br>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+    </div>
+    <p>Pode aumentar e pode diminuir</p>
+    <br><br><br>
+    <div class="conteiner3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+    </div>
+    <p>Pode aumentar e não pode diminuir</p>
 </body>
 </html>
